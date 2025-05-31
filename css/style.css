@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #b1eff1;
+  color: #333;
+}
+
+.header {
+  background: linear-gradient(90deg, #00222c, #182848);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+h1 {
+  margin: 10px 0 0;
+  font-size: 2.5rem;
+}
+
+.grid-item h1{
+  color: #00222c;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+
+.grid-item {
+  background-color: #e0f7fa;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+}
+
+.grid-item h2 {
+  color: #00222c;
+}
+
+.grid-item a {
+  color: #00222c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menucontent {
+display: flex;
+align-items: flex-start; /* Alinea el contenido arriba */
+}
+
+.menucontent {
+   background-color: #07d3da8f ;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.menucontent ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menucontent li {
+  margin: 0 15px;
+}
+
+.menucontent a {
+   color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.menucontent a:hover {
+  background-color: #182848;
+  border-radius: 8px;
+  color: #e0f7fa;
+}
+
+.contact-section {
+  background-color: #b1eff1; /* Fondo azul claro como en imagen 2 */
+  padding: 50px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  background: linear-gradient(to bottom right, #00202c , #38545e); /* El fondo interno con degradado */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.contact-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-group.half {
+  width: calc(50% - 10px);
+}
+
+.form-group.full {
+  width: 100%;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .info {
+  font-size: 0.95rem;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-form button {
+  background-color: #1a1ace;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.contact-form button:hover {
+  background-color: #182848;
+}
+
+  .calendar-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+  .calendar-title {
+      text-align: center;
+      color: #00222c;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+
+  .calendar {
+    display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+  .month {
+    display: flex;
+      background-color: #e0f7fa;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+  
+
+  .month h3 {
+      text-align: center;
+      margin: 0 0 10px;
+      color: #0cdfee;
+    }
+
+  .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      font-size: 0.8rem;
+    }
+
+  .day-name {
+      font-weight: bold;
+      color: #00222c;
+    }
+
+  .day {
+      padding: 5px;
+      color: #333;
+    }
+
+    .contenido {
+      background-color: #b2f0f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+main.contenido {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 800px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    
+
+    .integrantes {
+      margin-top: 20px;
+    }
+
+    .integrante {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .integrante img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+    }
+
+
+
+.section-separator {
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+.nombre {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4adbee;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0fb8f5;
+}
+
+.descripcion{
+  color: #1487b1;
+}
+
+
+
+.footer {
+  background-color: #00202c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
