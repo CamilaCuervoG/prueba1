@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(90deg, #00222c, #182848);
+  background: linear-gradient(90deg, #00182c,#00202c);
   color: white;
   padding: 20px;
   text-align: center;
@@ -99,8 +99,46 @@ align-items: flex-start; /* Alinea el contenido arriba */
   color: #e0f7fa;
 }
 
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  width: 100%;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
 .contact-section {
-  background-color: #b1eff1; /* Fondo azul claro como en imagen 2 */
+  background-color: #b1eff1; 
   padding: 50px 20px;
   font-family: 'Segoe UI', sans-serif;
   color: white;
