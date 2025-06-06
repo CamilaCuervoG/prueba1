@@ -1,0 +1,487 @@
+/* Estilos base */
+h2 {
+  font-size: clamp(18px, 3vw, 20px);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+strong {
+  font-size: clamp(24px, 4vw, 30px);
+  line-height: 1.3;
+}
+
+/* Contenedor principal de tarjetas */
+.tarjetas {
+  padding: clamp(15px, 3vw, 20px);
+  margin: clamp(8px, 1.5vw, 10px);
+  border-radius: 10px;
+  background-color: rgb(33, 3, 99);
+  color: aliceblue;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjetas:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Quienes somos */
+.tarjetas__quienesSomos {
+  margin-top: clamp(30px, 5vw, 50px);
+  text-align: justify;
+}
+
+.tarjetas__quienesSomos h1 {
+  text-align: left;
+  font-size: clamp(16px, 2.5vw, 18px);
+  margin-bottom: 1rem;
+}
+
+.img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.02);
+}
+
+.contenedorFlex__quienesSomos {
+  display: flex;
+  margin: clamp(50px, 12vw, 150px) clamp(20px, 8vw, 80px);
+  gap: clamp(20px, 5vw, 50px);
+  align-items: center;
+}
+
+/* Misión */
+.tarjetas__mision {
+  text-align: justify;
+}
+
+.contenedorFlex__mision {
+  display: flex;
+  margin: clamp(50px, 12vw, 150px) clamp(20px, 8vw, 80px);
+  gap: clamp(20px, 5vw, 50px);
+  align-items: center;
+}
+
+/* Visión */
+.tarjetas__vision {
+  text-align: justify;
+}
+
+.contenedorFlex__vision {
+  display: flex;
+  margin: clamp(50px, 12vw, 150px) clamp(20px, 8vw, 80px);
+  gap: clamp(20px, 5vw, 50px);
+  align-items: center;
+}
+
+/* Valores */
+.tarjetas__valores {
+  text-align: justify;
+}
+
+.tarjetas__valores h2 {
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.tarjetas__valores strong {
+  font-size: clamp(18px, 3vw, 20px);
+}
+
+.tarjetas__valores li {
+  font-size: clamp(16px, 2.5vw, 20px);
+  margin-bottom: 10px;
+  margin-right: clamp(20px, 5vw, 50px);
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.contenedorFlex__valores {
+  display: flex;
+  margin: clamp(50px, 12vw, 150px) clamp(20px, 8vw, 80px);
+  gap: clamp(20px, 5vw, 50px);
+  align-items: flex-start;
+}
+
+/* Historia */
+.tarjetas__historia {
+  text-align: justify;
+}
+
+.tarjetas__historia h2 {
+  font-size: clamp(28px, 5vw, 40px);
+}
+
+.tarjetas__historia strong {
+  font-size: clamp(18px, 3vw, 20px);
+}
+
+.tarjetas__historia li {
+  font-size: clamp(16px, 2.5vw, 20px);
+  margin-bottom: 10px;
+  margin-right: clamp(20px, 5vw, 50px);
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.contenedorFlex__historia {
+  display: flex;
+  margin: clamp(50px, 12vw, 150px) clamp(20px, 8vw, 80px);
+  gap: clamp(20px, 5vw, 50px);
+  align-items: flex-start;
+}
+
+/* Equipo */
+.tarjetas__equipo {
+  text-align: justify;
+}
+
+.tarjetas__equipo h2 {
+  margin-top: clamp(30px, 5vw, 50px);
+  font-size: clamp(32px, 6vw, 50px);
+  text-align: center;
+}
+
+.tarjetas__equipo p {
+  text-align: center;
+}
+
+.contenedorFlex__equipo {
+  border-radius: clamp(30px, 5vw, 50px);
+  padding: clamp(30px, 5vw, 50px);
+  background-color: #250770;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  margin: clamp(50px, 12vw, 150px) clamp(20px, 8vw, 80px) 10px;
+}
+
+.integrantes {
+  text-align: center;
+  padding: 10px;
+}
+
+.fila {
+  display: flex;
+  justify-content: center;
+  gap: clamp(15px, 3vw, 30px);
+  flex-wrap: wrap;
+}
+
+.integrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: clamp(10px, 2vw, 20px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: #2c0c7d;
+  padding: clamp(15px, 3vw, 20px);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.integrante:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.integrante img {
+  width: clamp(100px, 15vw, 140px);
+  height: clamp(100px, 15vw, 140px);
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.integrante img:hover {
+  transform: scale(1.05);
+}
+
+.nombre {
+  font-size: clamp(16px, 2.5vw, 18px);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.integrante li {
+  margin-bottom: 5px;
+}
+
+.papel {
+  font-size: clamp(13px, 2vw, 15px);
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+  margin: 0;
+}
+
+/* Cuenta correo (CTA) */
+.tarjetas__cta h2 {
+  font-size: clamp(32px, 6vw, 50px);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tarjetas__cta {
+  margin: clamp(50px, 8vw, 80px) clamp(20px, 5vw, 50px) clamp(30px, 5vw, 50px) clamp(20px, 8vw, 80px);
+  border-radius: clamp(30px, 5vw, 50px);
+  padding: clamp(20px, 3vw, 30px);
+  background-color: #250770;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.tarjetas__cta form {
+  text-align: center;
+  padding-bottom: clamp(30px, 5vw, 50px);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tarjetas__cta input[type="email"] {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: min(300px, 80vw);
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjetas__cta input[type="email"]:focus {
+  outline: none;
+  border-color: #007aff;
+  box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.1);
+}
+
+.tarjetas__cta button {
+  padding: 12px 20px;
+  background-color: #007aff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.tarjetas__cta button:hover {
+  background-color: #005ecc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+}
+
+.tarjetas__cta button:active {
+  transform: translateY(0);
+}
+
+/* Media Queries */
+
+/* Pantallas muy grandes (4K, ultrawide) */
+@media (min-width: 1920px) {
+  .contenedorFlex__quienesSomos,
+  .contenedorFlex__mision,
+  .contenedorFlex__vision,
+  .contenedorFlex__valores,
+  .contenedorFlex__historia {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contenedorFlex__equipo {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 10px;
+  }
+
+  .tarjetas__cta {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+
+  .fila {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .integrante {
+    max-width: 600px;
+  }
+}
+
+/* Pantallas grandes (Desktop) */
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .contenedorFlex__quienesSomos,
+  .contenedorFlex__mision,
+  .contenedorFlex__vision,
+  .contenedorFlex__valores,
+  .contenedorFlex__historia {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contenedorFlex__equipo {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tarjetas__cta {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .integrante {
+    max-width: 500px;
+  }
+}
+
+/* Tablets grandes y laptops pequeñas */
+@media (max-width: 1024px) {
+  .contenedorFlex__quienesSomos,
+  .contenedorFlex__mision,
+  .contenedorFlex__vision,
+  .contenedorFlex__valores,
+  .contenedorFlex__historia {
+    flex-direction: column;
+    margin: clamp(40px, 8vw, 80px) clamp(15px, 3vw, 30px);
+    gap: clamp(20px, 4vw, 30px);
+  }
+
+  .integrante {
+    max-width: 500px;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .integrante {
+    max-width: 400px;
+    width: 95vw;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenedorFlex__equipo {
+    margin: clamp(30px, 6vw, 50px) clamp(10px, 2vw, 20px);
+    padding: clamp(20px, 4vw, 30px);
+  }
+
+  .tarjetas__cta form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tarjetas__cta input[type="email"] {
+    width: min(280px, 90vw);
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .contenedorFlex__quienesSomos,
+  .contenedorFlex__mision,
+  .contenedorFlex__vision,
+  .contenedorFlex__valores,
+  .contenedorFlex__historia {
+    margin: clamp(20px, 5vw, 40px) clamp(10px, 2vw, 15px);
+    gap: clamp(15px, 3vw, 20px);
+  }
+
+  .integrante {
+    max-width: 320px;
+    width: 95vw;
+    padding: clamp(10px, 2vw, 15px);
+  }
+
+  .integrante img {
+    margin-bottom: 8px;
+  }
+
+  .tarjetas {
+    margin: clamp(5px, 1vw, 8px);
+    padding: clamp(12px, 2.5vw, 15px);
+  }
+
+  .tarjetas__cta {
+    margin: clamp(20px, 4vw, 30px) clamp(10px, 2vw, 15px);
+    padding: clamp(15px, 3vw, 20px);
+  }
+
+  .tarjetas__cta input[type="email"] {
+    width: min(250px, 85vw);
+  }
+
+  .tarjetas__cta button {
+    width: min(200px, 85vw);
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Móviles muy pequeños */
+@media (max-width: 320px) {
+  .integrante {
+    width: 95vw;
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .tarjetas__cta input[type="email"],
+  .tarjetas__cta button {
+    width: 90vw;
+  }
+
+  .img {
+    height: auto;
+    min-height: 120px;
+  }
+}
