@@ -1,25 +1,24 @@
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'montserrat', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #b1eff1;
   color: #333;
 }
 
 .header {
-  background: linear-gradient(90deg, #00182c,#00202c);
+  background: linear-gradient(90deg, #00182c,#4c20c4);
   color: white;
   padding: 20px;
   text-align: center;
 }
 
 .logo {
-  width: 150px;
+  width: 120px;
   vertical-align: middle;
   border-radius: 50%;
-  height: 150px;
+  height: 120px;
   object-fit: cover;
 }
-
 
 
 h1 {
@@ -28,7 +27,7 @@ h1 {
 }
 
 .grid-item h1{
-  color: #00222c;
+  color: #50cff5;
 }
 
 .grid-container {
@@ -39,10 +38,11 @@ h1 {
 }
 
 .grid-item {
-  background-color: #e0f7fa;
+  background-color: #1E293B;
+  color: white;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
   transition: transform 0.3s;
 }
 
@@ -51,11 +51,11 @@ h1 {
 }
 
 .grid-item h2 {
-  color: #00222c;
+  color: #00232e;
 }
 
 .grid-item a {
-  color: #00222c;
+  color: #033646;
   text-decoration: none;
   font-weight: bold;
 }
@@ -66,7 +66,7 @@ align-items: flex-start; /* Alinea el contenido arriba */
 }
 
 .menucontent {
-   background-color: #07d3da8f ;
+  background-color: #07d3da8f;
   padding: 10px 0;
   text-align: center;
 }
@@ -102,13 +102,14 @@ align-items: flex-start; /* Alinea el contenido arriba */
 .carousel {
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 1500px;
   margin: auto;
   overflow: hidden;
 }
 
 .carousel-images img {
   width: 100%;
+  height: auto;
   display: none;
   transition: opacity 0.5s ease-in-out;
 }
@@ -137,6 +138,22 @@ button.prev {
 button.next {
   right: 10px;
 }
+
+.mini-calendario {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.evento-box {
+  background-color: #63095e;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: white;
+}
+
+
 .contact-section {
   background-color: #b1eff1; 
   padding: 50px 20px;
@@ -334,7 +351,7 @@ main.contenido {
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #4adbee;
+  background-color: #7332eb;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -353,7 +370,7 @@ main.contenido {
 
 
 .footer {
-  background-color: #00202c;
+  background: linear-gradient(90deg,#4c20c4,#00182c);
   color: white;
   text-align: center;
   padding: 20px;
