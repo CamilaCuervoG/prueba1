@@ -1,25 +1,49 @@
 body {
   margin: 0;
   font-family: 'montserrat', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #b1eff1;
-  color: #333;
+  background: #f2f3fa; /* gris muy claro con tono azulado */
+  color: #1a1a1a;
+
 }
 
 .header {
-  background: linear-gradient(90deg, #00182c,#4c20c4);
-  color: white;
-  padding: 20px;
+  background: linear-gradient(135deg, #00182c, #4c20c4);
+  color: #fff;
+  padding: 40px 20px; /* este padding ya es suficiente */
   text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;  /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  gap: 20px;                /* Espacio entre elementos */
+  flex-wrap: wrap;          /* Para que se acomode bien en pantallas pequeñas */
 }
 
 .logo {
   width: 120px;
-  vertical-align: middle;
-  border-radius: 50%;
   height: 120px;
+  border-radius: 50%;
   object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
 
 h1 {
   margin: 10px 0 0;
@@ -40,8 +64,8 @@ h1 {
 .grid-item {
   background-color: #1E293B;
   color: white;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 30px;
+  padding: 5px 20px;
   box-shadow: 0 4px 8px rgba(7, 7, 7, 0.1);
   transition: transform 0.3s;
 }
@@ -66,56 +90,116 @@ align-items: flex-start; /* Alinea el contenido arriba */
 }
 
 .menucontent {
-  background-color: #07d3da8f;
+  background: linear-gradient(90deg, #150050, #3F0071);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   padding: 10px 0;
+  border-radius: 11px;
   text-align: center;
+  overflow-x: auto; /* En caso de muchos ítems, permite scroll horizontal */
+}
+
+/* Estilo de la barra (scroll horizontal móvil opcional) */
+.menucontent::-webkit-scrollbar {
+  height: 6px;
+}
+
+.menucontent::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
 }
 
 .menucontent ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .menucontent li {
-  margin: 0 15px;
+  margin: 0 10px;
 }
 
 .menucontent a {
-   color: white;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   font-size: 1rem;
   padding: 8px 12px;
-  transition: background 0.3s, color 0.3s;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .menucontent a:hover {
-  background-color: #182848;
-  border-radius: 8px;
-  color: #e0f7fa;
+  background: linear-gradient(90deg, #4B0082, #7B1FA2);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transform: scale(1.08);
+  z-index: 2;
 }
+
+/* RESPONSIVE: para pantallas menores a 768px */
+@media (max-width: 768px) {
+  .menucontent ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menucontent li {
+    margin: 5px 0;
+  }
+
+  .menucontent a {
+    font-size: 1rem;
+    width: 100%;
+    max-width: 220px;
+    text-align: center;
+  }
+}
+
 
 .carousel {
   position: relative;
   width: 100%;
   max-width: 1500px;
-  margin: auto;
+  border-radius: 15px; /* mantenido */
+  margin: 20px auto;
   overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* mejora visual */
+}
+
+.carousel-images {
+  position: relative;
+  width: 100%;
 }
 
 .carousel-images img {
   width: 100%;
   height: auto;
   display: none;
-  transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease;
+  border-radius: 15px; /* igual que el contenedor */
+  object-fit: cover;
 }
 
 .carousel-images img.active {
   display: block;
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel {
+    max-width: 95%;
+    border-radius: 15px;
+  }
+
+  .carousel-images img {
+    border-radius: 15px;
+  }
 }
 
 button.prev,
@@ -199,7 +283,6 @@ button.next {
 
 
 .contact-section {
-  background-color: #b1eff1; 
   padding: 50px 20px;
   font-family: 'Segoe UI', sans-serif;
   color: white;
@@ -344,12 +427,12 @@ button.next {
       margin: 0;
       padding: 0;
     }
-main.contenido {
+/* main.contenido {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 40px 20px;
-    }
+    } */
 
     .card {
       background-color: white;
@@ -399,6 +482,8 @@ main.contenido {
 
 .footer {
   background: linear-gradient(90deg,#4c20c4,#00182c);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   color: white;
   text-align: center;
   padding: 20px;
