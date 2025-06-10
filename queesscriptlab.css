@@ -1,4 +1,10 @@
 /* Estilos base */
+.contenido{
+  font-family: 'montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f3fa; /* gris muy claro con tono azulado */
+  color: #1a1a1a;
+}
+
 h2 {
   font-size: clamp(18px, 3vw, 20px);
   line-height: 1.4;
@@ -19,8 +25,8 @@ strong {
 /* Contenedor principal de tarjetas */
 .tarjetas {
   padding: clamp(15px, 3vw, 20px);
-  margin: clamp(8px, 1.5vw, 10px);
-  border-radius: 10px;
+  margin: clamp(30px, 1.5vw, 10px);
+  border-radius: 30px;
   background-color: rgb(33, 3, 99);
   color: aliceblue;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
