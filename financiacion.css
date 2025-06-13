@@ -52,8 +52,7 @@
         flex: 1 1 100%;
     }
 }
-
-button#enlace1,#enlace2,#enlace3,#enlace4,#enlace5,#enlace6,#enlace7,#enlace8{
+button#enlace1,#enlace2,#enlace3,#enlace4{
     /* Color del fondo */
     background-color: #005299;
     /* Color del texto */
@@ -72,11 +71,10 @@ button#enlace1,#enlace2,#enlace3,#enlace4,#enlace5,#enlace6,#enlace7,#enlace8{
     transition: background color 0.3s;
 }
 
-button#enlace1:hover,#enlace2:hover,#enlace3:hover,#enlace4:hover,#enlace5:hover,#enlace6:hover,#enlace7:hover,#enlace7:hover, #enlace8:hover{
+button#enlace1:hover,#enlace2:hover,#enlace3:hover,#enlace4:hover{
     /* Color de la transición */
     background-color: #013664;
 }
-
 .image2 {
     width: 100%;
     height: 60%;
