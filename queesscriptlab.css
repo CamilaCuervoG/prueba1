@@ -1,4 +1,10 @@
 /* Estilos base */
+.contenido{
+  font-family: 'montserrat', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f2f3fa; /* gris muy claro con tono azulado */
+  color: #1a1a1a;
+}
+
 h2 {
   font-size: clamp(18px, 3vw, 20px);
   line-height: 1.4;
@@ -19,8 +25,8 @@ strong {
 /* Contenedor principal de tarjetas */
 .tarjetas {
   padding: clamp(15px, 3vw, 20px);
-  margin: clamp(8px, 1.5vw, 10px);
-  border-radius: 10px;
+  margin: clamp(30px, 1.5vw, 10px);
+  border-radius: 30px;
   background-color: rgb(33, 3, 99);
   color: aliceblue;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -171,27 +177,24 @@ strong {
 .integrantes {
   text-align: center;
   padding: 10px;
-}
-
-.fila {
   display: flex;
-  justify-content: center;
-  gap: clamp(15px, 3vw, 30px);
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .integrante {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: #220f60;
+  color: white;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: clamp(10px, 2vw, 20px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #2c0c7d;
-  padding: clamp(15px, 3vw, 20px);
-  border-radius: 10px;
-  width: 100%;
-  max-width: 900px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .integrante:hover {
@@ -200,8 +203,8 @@ strong {
 }
 
 .integrante img {
-  width: clamp(100px, 15vw, 140px);
-  height: clamp(100px, 15vw, 140px);
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
@@ -213,24 +216,32 @@ strong {
   transform: scale(1.05);
 }
 
-.nombre {
-  font-size: clamp(16px, 2.5vw, 18px);
+.integrante .nombre{
+  font-size: 1.1rem;
+  margin: 8px 0 5px 0;
   font-weight: bold;
-  text-align: center;
-  margin-bottom: 8px;
 }
+  
+  .integrante .papel{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .integrante .papel li {
+    font-size: 0.95rem;
+    margin: 3px 0;
+  }
 
-.integrante li {
-  margin-bottom: 5px;
-}
-
-.papel {
-  font-size: clamp(13px, 2vw, 15px);
-  list-style-type: none;
-  padding-left: 0;
-  text-align: center;
-  margin: 0;
-}
+  .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    /* gap: clamp(15px, 3vw, 30px); */
+  }
 
 /* Cuenta correo (CTA) */
 .tarjetas__cta h2 {
@@ -327,13 +338,20 @@ strong {
     margin-bottom: 50px;
   }
 
+  
   .fila {
     max-width: 1400px;
     margin: 0 auto;
   }
+  
+  .integrantes {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
 
   .integrante {
-    max-width: 600px;
+    /* max-width: 600px; */
+    width: 240px;
   }
 }
 
@@ -349,6 +367,10 @@ strong {
     margin-right: auto;
   }
 
+  .tarjetas{
+    padding: 50px;
+  }
+
   .contenedorFlex__equipo {
     max-width: 1400px;
     margin-left: auto;
@@ -361,8 +383,14 @@ strong {
     margin-right: auto;
   }
 
+  .integrantes{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
   .integrante {
-    max-width: 500px;
+    width: 220px;
+    /* max-width: 500px; */
   }
 }
 
@@ -378,14 +406,22 @@ strong {
     gap: clamp(20px, 4vw, 30px);
   }
 
-  .integrante {
-    max-width: 500px;
+  .integrantes{
+    justify-content: center;
+    gap: 20px;
   }
 
-  .img {
-    width: 100%;
-    height: auto;
+  .integrante {
+    width: 200px;
+    min-height: 340px;
+    /* max-width: 500px; */
   }
+
+  .integrante .img {
+    width: 90px;
+    height: 90px;
+  }
+  
 }
 
 /* Tablets */
@@ -395,11 +431,22 @@ strong {
     align-items: center;
   }
 
-  .integrante {
-    max-width: 400px;
-    width: 95vw;
+  .integrantes{
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+  }
+
+  .integrante {
+    width: 90%;
+    max-width: 300px;
+    min-height: 330px;
+    /* flex-direction: column; */
+    /* text-align: center; */
+  }
+
+  .integrante img {
+    width: 110px;
+    height: 110px;
   }
 
   .contenedorFlex__equipo {
@@ -420,6 +467,52 @@ strong {
     width: 100%;
     height: auto;
   }
+
+  #quienesSomos{
+    order:1;
+  }
+  #quienesSomos-p{
+    order: 2;
+  }
+  #mision{
+    order: 3;
+  }
+  #mision-p{
+    order: 4;
+  }
+  #vision{
+    order: 5;
+  }
+  #vision-p{
+    order: 6;
+  }
+  #valores{
+    order: 7;
+  }
+  #valores-p{
+    order: 8;
+  }
+
+  #historia{
+    order: 9;
+  }
+  #historia-p{
+    order: 10;
+  }
+    .logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .header h2 {
+    margin: 0;
+    font-size: 0.6rem;
+  }
 }
 
 /* Móviles */
@@ -433,14 +526,39 @@ strong {
     gap: clamp(15px, 3vw, 20px);
   }
 
+  .integrantes{
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
   .integrante {
-    max-width: 320px;
-    width: 95vw;
-    padding: clamp(10px, 2vw, 15px);
+    width: 90vw;
+    max-width: 280px;
+    min-height: 310px;
+    padding: 50px 10px 0px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* padding: 12px; */
+    /* max-width: 320px; */
+    /* width: 95vw; */
+    /* padding: clamp(10px, 2vw, 15px); */
   }
 
   .integrante img {
-    margin-bottom: 8px;
+    width: 85px;
+    height: 85px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* width: 100px;
+    height: 100px; */
+    /* margin-bottom: 8px; */
+  }
+
+  .integrante .nombre{
+    font-size: 1rem;
+  }
+
+  .integrante .papel li {
+    font-size: 0.9rem;
   }
 
   .tarjetas {
@@ -465,23 +583,35 @@ strong {
     width: 100%;
     height: auto;
   }
-}
 
-/* Móviles muy pequeños */
-@media (max-width: 320px) {
-  .integrante {
-    width: 95vw;
-    max-width: 300px;
-    padding: 10px;
+  #quienesSomos{
+    order:1;
   }
-
-  .tarjetas__cta input[type="email"],
-  .tarjetas__cta button {
-    width: 90vw;
+  #quienesSomos-p{
+    order: 2;
   }
-
-  .img {
-    height: auto;
-    min-height: 120px;
+  #mision{
+    order: 3;
+  }
+  #mision-p{
+    order: 4;
+  }
+  #vision{
+    order: 5;
+  }
+  #vision-p{
+    order: 6;
+  }
+  #valores{
+    order: 7;
+  }
+  #valores-p{
+    order: 8;
+  }
+  #historia{
+    order: 9;
+  }
+  #historia-p{
+    order: 10;
   }
 }
