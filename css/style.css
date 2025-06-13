@@ -252,7 +252,7 @@ button.next {
 .contact-container {
   max-width: 1000px;
   margin: auto;
-  background: linear-gradient(to bottom right, #00202c , #38545e); /* El fondo interno con degradado */
+  background: linear-gradient(to bottom right, #3c10db , #06041a); /* El fondo interno con degradado */
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -314,7 +314,7 @@ button.next {
 }
 
 .contact-form button {
-  background-color: #1a1ace;
+  background-color: #7126a3;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -327,7 +327,7 @@ button.next {
 }
 
 .contact-form button:hover {
-  background-color: #182848;
+  background-color: #1ab3ce;
 }
 
   .calendar-container {
