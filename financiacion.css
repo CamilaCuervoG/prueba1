@@ -37,6 +37,7 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
+    height: 100%;
 }
 
 /* Responsive para pantallas medianas (tablets) */
