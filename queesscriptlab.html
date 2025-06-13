@@ -6,6 +6,7 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="queesscriptlab.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>¿Qué es Script Lab?</title>
 </head>
 <body>
@@ -13,6 +14,8 @@
     <img src="logo/logo.png"  class="logo" alt="Logo Script Lab">
     <h1>Script Lab</h1>
     <h2>Impulsa tu Emprendimiento - Red de Emprendedores</h2>
+
+    <button class="hamburger" id="menu-toggle" aria-label="Abrir menú">☰</button>
 
     <div class="menucontent">
       <nav class="menu">
@@ -33,32 +36,30 @@
     <section class="tarjetas">
       <section class="contenedorFlex__quienesSomos" data-aos="fade-right">
 
-        <img src="img/quienesSomos.png" class="img">
+        <img src="img/quienesSomos.png" class="img" id="quienesSomos">
         
-        <section class="tarjetas__quienesSomos">
+        <section class="tarjetas__quienesSomos" id="quienesSomos-p">
         <h1>Quiénes Somos</h1>
-        <p><strong>Inspiramos y conectamos a emprendedores en Medellín, desde la idea hasta la acción.</strong></p>
+        <p ><strong>Inspiramos y conectamos a emprendedores en Medellín, desde la idea hasta la acción.</strong></p>
         <p>Somos una plataforma informativa en construcción, creada para acompañar a los emprendedores de Medellín desde sus primeros pasos. Reunimos recursos clave, guías prácticas y una red de apoyo local para que las ideas no se queden en el papel, sino que se conviertan en proyectos reales.</p>
       </section>
     </section>
 
     <section class="contenedorFlex__mision">
-  <section class="tarjetas__mision" data-aos="fade-left">
-    <h2>Misión</h2>
-    <p>
-      <strong>Impulsar el emprendimiento con propósito:</strong>
-      Facilitamos el acceso a información clara, útil y confiable para que cualquier persona en Medellín pueda emprender con seguridad, preparación y visión de futuro. Nuestro compromiso es acompañar el crecimiento de ideas innovadoras desde sus primeros pasos, brindando recursos, orientación y una comunidad de apoyo.
-    </p>
-  </section>
-  <img src="img/mision.png" class="img">
-</section>
+      <section id="mision-p" class="tarjetas__mision" data-aos="fade-left">
+        <h2>Misión</h2>
+        <p><strong>Impulsar el emprendimiento con propósito:</strong>
+          Facilitamos el acceso a información clara, útil y confiable para que cualquier persona en Medellín pueda emprender con seguridad, preparación y visión de futuro. Nuestro compromiso es acompañar el crecimiento de ideas innovadoras desde sus primeros pasos, brindando recursos, orientación y una comunidad de apoyo.
+        </p>
+      </section>
+      <img src="img/mision.png" class="img" id="mision">
+    </section>
 
 <section class="contenedorFlex__vision" data-aos="fade-right">
-  <img src="img/vision.png" class="img">
-  <section class="tarjetas__vision">
+  <img src="img/vision.png" class="img" id="vision">
+  <section id="vision-p" class="tarjetas__vision">
     <h2>Visión</h2>
-    <p>
-      <strong>Ser el motor de una Medellín emprendedora:</strong>
+    <p><strong>Ser el motor de una Medellín emprendedora:</strong>
       Aspiramos a convertirnos en el portal de referencia para los emprendedores de la ciudad, fomentando una cultura de colaboración, innovación y crecimiento sostenible. Imaginamos un ecosistema donde cada emprendedor, sin importar su origen o nivel de experiencia, encuentre herramientas para crecer, conexiones significativas y la motivación para transformar su realidad.
     </p>
   </section>
@@ -66,7 +67,7 @@
 
 
       <section class="contenedorFlex__valores">
-        <section class="tarjetas__valores" data-aos="fade-left">
+        <section id="valores-p" class="tarjetas__valores" data-aos="fade-left">
           <h2>Nuestros Valores</h2>
           <ul>
             <li><strong>Accesibilidad:</strong> contenido gratuito, claro y fácil de aplicar.</li>
@@ -76,14 +77,14 @@
           </ul>
         </section>
 
-        <img src="img/valores.png" class="img">
+        <img src="img/valores.png" class="img" id="valores">
       </section>
 
       <section class="contenedorFlex__historia" data-aos="fade-up">
 
-       <img src="img/historia.png" class="img">
+       <img src="img/historia.png" class="img" id="historia-p">
 
-        <section class="tarjetas__historia">
+        <section class="tarjetas__historia" id="historia-p">
           <h2>Nuestra Historia</h2>
           <ul>
             <li><strong>Abril 2025:</strong> nace la idea como un proyecto académico, impulsado por estudiantes apasionados por el emprendimiento local.</li>
@@ -100,7 +101,7 @@
           </section>
 
           <div class="integrantes">
-  <p><strong>Conformado por:</strong></p>
+            <p><strong>Conformado por:</strong></p>
 
   <!-- Primera fila -->
   <div class="fila" data-aos="fade-up">
@@ -173,5 +174,7 @@
       once: true
     });
   </script>
+
+ <script src="menu.js"></script>
 </body>
 </html>
