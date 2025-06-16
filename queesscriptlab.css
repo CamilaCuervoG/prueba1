@@ -1,8 +1,14 @@
 /* Estilos base */
 .contenido{
   font-family: 'montserrat', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f2f3fa; /* gris muy claro con tono azulado */
-  color: #1a1a1a;
+  /* background: #f2f3fa; /* gris muy claro con tono azulado */
+  /* color: #1a1a1a; */
+      background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('img/queesscriptlab.jpg');
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen */
 }
 
 h2 {
