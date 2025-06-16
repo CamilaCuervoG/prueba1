@@ -1,0 +1,157 @@
+body {
+    /* background-image: url('img/networking.jpg'); */
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+        url('img/networking.jpg');
+    background-size: cover;  /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    background-position: center;  /* Centra la imagen */
+}
+
+.layout-grid2{
+    /* Disposición sea flexible */
+    display: flex;
+    /* Flexible */
+    flex: 1;
+     /* Espaciado entre el borde y el contenido */
+}
+
+.main-content2{
+    /* Ancho */
+    width: 100%;
+    /* Disposición sea flexible */
+    display: flex;
+    /* Flexible por columnas */
+    flex-direction: column;
+    /* Alineación de los items en el eje transversal (horizontal) hacia la izquierda al inicio */
+    align-items: flex-start;
+    /* El espaciado entre contenidos */
+    gap: 20px;
+}
+
+.contact-section2 {
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    align-items: left;
+}
+
+.contact-container2 {
+    max-width: 300px;
+    margin: 0; /* Esto deja el contenedor pegado a la izquierda para dar espacio a los resultados del registro de emprendimientos */
+    background: linear-gradient(to bottom right, #3c10db , #06041a); /* El fondo interno con degradado */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section2 h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-section2 p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.contact-form2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group.half2 {
+    width: calc(50% - 10px);
+}
+
+.contact-form2 label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form2 select {
+    margin-bottom: 5px;
+    font-weight: bold;
+    max-width: 100%;
+    font-size: 0.9rem;  /* así se achica la fuente en las opciones para que no se desborde del select   */
+    padding: 8px;
+}
+
+.contact-form2 input,
+.contact-form2 select {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+}
+
+.contact-form2 .info {
+    font-size: 0.95rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-form2 button {
+    background-color: #7126a3;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px auto 0;
+    display: block;
+}
+
+.contact-form2 button:hover {
+    background-color: #1ab3ce;
+}
+
+/* .cards-container {
+    padding: 50px 20px;
+    margin: 0px 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+
+.cards-container {
+    padding: 50px 0px;
+    margin: 0px 30px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cards-container .card {
+    background: #f5f5f5;
+    color: #000;
+    padding: 15px 10px 15px 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px #0003;
+    transition: transform 0.3s ease;
+}
+
+.cards-container .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px #0004;
+}
+
+.cards-container .card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #7126a3;
+}

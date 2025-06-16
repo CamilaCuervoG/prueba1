@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="networking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <header class="header">
+    <img src="logo/logo.png"  class="logo" alt="Logo Script Lab">
+    <h1>Script Lab</h1>
+    <h2>Donde el emprendimiento encuentra su impulso</h2>
+
+    <button class="hamburger" id="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <div class="menucontent">
+        <nav class="menu">
+            <ul>                
+                <li>
+                    <a href="index.html">
+                        <img src="" alt="">Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="Feriasyeventoslocales.html">
+                        <img src="" alt=""> Ferias y eventos locales
+                    </a>
+                </li>
+                <li>
+                    <a href="queesscriptlab.html">
+                        <img src="" alt="" class=""> ¿Qué es Script Lab?
+                    </a>
+                </li>
+                <li>
+                    <a href="webinars.html">
+                        <img src="" alt=""> Formación
+                    </a>
+                </li>
+                <li>
+                    <a href="financiacion.html">
+                        <img src="" alt="" class=""> Financiacion
+                    </a>
+                </li>
+                <li>
+                    <a href="calendario.html">
+                        <img src="" alt="" class=""> Calendario
+                    </a>
+                </li>
+                <li>
+                    <a href="contactanos.html">
+                        <img src="" alt="" class=""> Contactanos
+                    </a>
+                </li>
+                <li>
+                    <a href="networking.html">
+                        <img src="" alt="" class=""> Networking
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div class="layout-grid2">
+        <main class="main-content2">
+            <section class="contact-section2">
+                <div class="contact-container2">
+                    <h2>Registra tu Emprendimiento</h2>
+                    <p><b>¡Queremos que te registres en nuestra base de datos!</b> <br> Estamos creando una red de emprendedores para brindarte eventos exclusivos de networking donde puedas conocer aliados estratégicos para crecer tu empresa </p>
+                    <form class="contact-form2">
+                    <div class="form-group2">
+                        <label for="razon_social">Nombre del Emprendimiento<span style="color: red;">*</span></label>
+                        <input type="razon_social" id="razon_social" name="razon_social" required>
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="sector_productivo">Sector Productivo<span style="color: red;">*</span></label>
+                            <select name="sector_productivo" id="sector_productivo" required>
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="agroindustria">Agroindustria</option>
+                                <option value="manufacturas">Manufacturas</option>
+                                <option value="servicios">Servicios</option>
+                                <option value="conocimiento">Conocimiento e Innovación</option>
+                            </select>
+                    </div>
+
+                    <!-- Esto permitirá que haya una segunda selección de subsectores o tipos de emprendimiento que solamente se activarán cuando se seleccione la opción agroindustria en el label Sector Productivo -->
+                    <div class="form-group2" id="agro_subsector" style="display: none">
+                        <label for="agro_subsector_select">Tipo de Emprendimiento<span style="color: red;">*</span></label>
+                            <select name="agro_subsector" id="agro_subsector_select">
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="Agricultura">Agricultura</option>
+                                <option value="Avícola">Avícola</option>
+                                <option value="Caco y sus derivados">Cacao y sus derivados</option>
+                                <option value="Cafés especiales y derivados">Cafés especiales y derivados</option>
+                                <option value="Ganadería">Ganadería</option>
+                                <option value="Lácteos">Lácteos</option>
+                                <option value="Piscícola">Piscícola</option>
+                            </select>
+                    </div>
+                    
+                    <!-- Esto permitirá que haya una segunda selección de subsectores o tipos de emprendimiento que solamente se activarán cuando se seleccione la opción manufacturas en el label Sector Productivo -->
+                    <div class="form-group2" id="manufactura_subsector" style="display: none">
+                        <label for="manufactura_subsector_select">Tipo de Emprendimiento<span style="color: red;">*</span></label>
+                            <select name="manufactura_subsector" id="manufactura_subsector_select">
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="Alimentos procesados">Alimentos procesados</option>
+                                <option value="Cosméticos y aseo">Cosméticos y aseo</option>
+                                <option value="Energías">Energías</option>
+                                <option value="Farmacéuticos">Farmacéuticos</option>
+                                <option value="Industrias para la construcción">Industrias para la construcción</option>
+                                <option value="Plásticos y pinturas">Plásticos y pinturas</option>
+                                <option value="Productos químicos">Productos químicos</option>
+                                <option value="Textiles">Textiles</option>
+                            </select>
+                    </div>
+                    
+                    <!-- Esto permitirá que haya una segunda selección de subsectores o tipos de emprendimiento que solamente se activarán cuando se seleccione la opción servicios en el label Sector Productivo -->
+                    <div class="form-group2" id="servicios_subsector" style="display: none">
+                        <label for="servicios_subsector_select">Tipo de Emprendimiento<span style="color: red;">*</span></label>
+                            <select name="servicios_subsector" id="servicios_subsector_select">
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="Comercio">Comercio</option>
+                                <option value="Servicios financieros">Servicios financieros</option>
+                                <option value="Turismo y hostelería">Turismo y hostelería</option>
+                                <option value="Educación y salud">Educación y salud</option>
+                                <option value="Transporte y logística">Transporte y logística</option>
+                            </select>
+                    </div>
+                    
+                    <!-- Esto permitirá que haya una segunda selección de subsectores o tipos de emprendimiento que solamente se activarán cuando se seleccione la opción conocimiento e innovación en el label Sector Productivo -->
+                    <div class="form-group2" id="conocimiento_subsector" style="display: none">
+                        <label for="conocimiento_subsector_select">Tipo de Emprendimiento<span style="color: red;">*</span></label>
+                            <select name="conocimiento_subsector" id="conocimiento_subsector_select">
+                                <option value="" disabled selected>Seleccione una opción</option>
+                                <option value="I+D">I+D</option>
+                                <option value="TIC">TIC</option>
+                                <option value="Consultoría en gestión empresarial, finanzas, recursos humanos y marketing">Consultoría en gestión empresarial, finanzas, recursos humanos y marketing</option>
+                                <option value="Capacitación formal">Capacitación formal</option>
+                                <option value="Investigación médica y tecnologías en salud">Investigación médica y tecnologías en salud</option>
+                                <option value="Cultura, ocio y entretenimiento">Cultura, ocio y entretenimiento</option>
+                            </select>
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="name">Nombre del representante legal<span style="color: red;">*</span></label>
+                        <input type="text" id="name" name="name">
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="phone">Número de contacto<span style="color: red;">*</span></label>
+                        <input type="text" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group2">
+                        <label for="email">Correo electrónico<span style="color: red;">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <button type="submit">Registrar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Recolección de resultados para ser mostrados en pantalla al lado del formulario -->
+        <aside id="cards-container" class="cards-container">
+        <!-- Aquí se irán agregando las cartas -->
+        </aside>
+
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; <b>2025 Script Lab</b> <br> Bootcamp programación - Talento Tech <br> Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="networking.js"></script>
+</body>
+</html>
+
